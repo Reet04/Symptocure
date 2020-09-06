@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/backgr"
+tools:context=".Intro_window">
+
+    <TextView
+    android:id="@+id/heading_login"
+    android:layout_width="413dp"
+    android:layout_height="wrap_content"
+    android:background="#2979FF"
+    android:fontFamily="@font/montserratsemibold"
+    android:lineSpacingExtra="8sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="10dp"
+    android:text="Introduction"
+    android:textAlignment="center"
+    android:textColor="#052828"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<ImageView
+    android:id="@+id/image_login"
+    android:layout_width="250dp"
+    android:layout_height="180dp"
+    android:layout_marginStart="100dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="100dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/heading_login"
+    tools:srcCompat="@tools:sample/avatars" />
+
+<TextView
+    android:id="@+id/text_para"
+    android:layout_width="373dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="20dp"
+    android:ems="10"
+    android:fontFamily="@font/montserratmedium"
+    android:gravity="start|top"
+    android:inputType="textMultiLine"
+    android:text="Symptocure is a safe and fast Self Check-up tool. Your symptoms would be carefully analyzed and according to your answers, the Expected Problem, it's Precaution and the type of Doctor to be concerned will be displayed."
+    android:textColor="#052828"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.543"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text_greeting" />
+
+<TextView
+    android:id="@+id/text_greeting"
+    android:layout_width="373dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="20dp"
+    android:fontFamily="@font/montserratsemibold"
+    android:paddingTop="5dp"
+    android:text="Greetings!"
+    android:textColor="#052828"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/image_login" />
+
+<Button
+    android:id="@+id/button_next"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginBottom="50dp"
+    android:background="#2979FF"
+    android:onClick="Notes"
+    android:text="Next"
+    android:textColor="#052828"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+<Button
+    android:id="@+id/button_next2"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginBottom="50dp"
+    android:background="#2979FF"
+    android:onClick="login_next"
+    android:text="Next"
+    android:textColor="#052828"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+<Button
+    android:id="@+id/button_back"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:layout_marginStart="50dp"
+    android:layout_marginBottom="50dp"
+    android:background="#2979FF"
+    android:onClick="go_back"
+    android:text="Back"
+    android:textColor="#052828"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<CheckBox
+    android:id="@+id/checkBox"
+    android:layout_width="278dp"
+    android:layout_height="39dp"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginBottom="20dp"
+    android:fontFamily="@font/montserratsemibold"
+    android:text="I agree to the above Terms."
+    android:textColor="#052828"
+    android:textSize="14sp"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toTopOf="@+id/button_back"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
