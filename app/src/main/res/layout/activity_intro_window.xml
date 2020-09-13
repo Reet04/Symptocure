@@ -24,19 +24,7 @@ tools:context=".Intro_window">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
-<ImageView
-    android:id="@+id/image_login"
-    android:layout_width="250dp"
-    android:layout_height="180dp"
-    android:layout_marginStart="100dp"
-    android:layout_marginTop="30dp"
-    android:layout_marginEnd="100dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/heading_login"
-    tools:srcCompat="@tools:sample/avatars" />
-
-<TextView
+    <TextView
     android:id="@+id/text_para"
     android:layout_width="373dp"
     android:layout_height="wrap_content"
@@ -77,9 +65,9 @@ tools:context=".Intro_window">
     android:layout_marginEnd="50dp"
     android:layout_marginBottom="50dp"
     android:background="#2979FF"
+    android:textColor="#052828"
     android:onClick="Notes"
     android:text="Next"
-    android:textColor="#052828"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent" />
 
@@ -111,7 +99,7 @@ tools:context=".Intro_window">
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toStartOf="parent" />
 
-<CheckBox
+    <CheckBox
     android:id="@+id/checkBox"
     android:layout_width="278dp"
     android:layout_height="39dp"
@@ -126,5 +114,17 @@ tools:context=".Intro_window">
     app:layout_constraintBottom_toTopOf="@+id/button_back"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_login"
+        android:layout_width="269dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading_login"
+        app:srcCompat="@drawable/doc1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

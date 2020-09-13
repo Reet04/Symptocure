@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context=".Intro_window">
+
+    <TextView
+        android:id="@+id/heading_login"
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
+        android:background="#2979FF"
+        android:fontFamily="@font/montserratsemibold"
+        android:lineSpacingExtra="8sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        android:text="Introduction"
+        android:textAlignment="center"
+        android:textColor="#052828"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="407dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:fontFamily="@font/montserratmedium"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Select Your Symptoms from the list below:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading_login" />
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="630dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="blocked nose" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="runny nose" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sore throat" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Headache" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dry cough" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wet cough" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chronic cough" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sneezing" />
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Raising Temperature" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Low Temperature" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="High Temperature" />
+
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loss of Taste and Smell" />
+
+            <CheckBox
+                android:id="@+id/checkBox13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muscle ache" />
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pressure in ears" />
+
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiredness" />
+
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="wheezing (a whistling sound when breathing)" />
+
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breathlessness" />
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tight Chest" />
+
+            <CheckBox
+                android:id="@+id/checkBox19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lightheadedness" />
+
+            <CheckBox
+                android:id="@+id/checkBox20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dizziness" />
+
+            <CheckBox
+                android:id="@+id/checkBox21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feeling sick" />
+
+            <CheckBox
+                android:id="@+id/checkBox22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weakness" />
+
+            <CheckBox
+                android:id="@+id/checkBox23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blurred vision" />
+
+            <CheckBox
+                android:id="@+id/checkBox24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fainting" />
+
+            <CheckBox
+                android:id="@+id/checkBox25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confusion" />
+
+            <CheckBox
+                android:id="@+id/checkBox26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swollen ankles" />
+
+            <CheckBox
+                android:id="@+id/checkBox27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swollen Feet or hands" />
+
+            <CheckBox
+                android:id="@+id/checkBox28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shortness of Breath" />
+
+            <CheckBox
+                android:id="@+id/checkBox29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood/Protein in urine" />
+
+            <CheckBox
+                android:id="@+id/checkBox30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frequent Urination, particularly at night (Nocturia)" />
+
+            <CheckBox
+                android:id="@+id/checkBox31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itchy Skin" />
+
+            <CheckBox
+                android:id="@+id/checkBox32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feeling Hot" />
+
+            <CheckBox
+                android:id="@+id/checkBox33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shivering" />
+
+            <CheckBox
+                android:id="@+id/checkBox34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Severe Headache" />
+
+            <CheckBox
+                android:id="@+id/checkBox35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pain behind the eyes" />
+
+            <CheckBox
+                android:id="@+id/checkBox36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="joint pain" />
+
+            <CheckBox
+                android:id="@+id/checkBox37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Red rashes" />
+
+            <CheckBox
+                android:id="@+id/checkBox38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Widespread Red Rashes" />
+
+            <CheckBox
+                android:id="@+id/checkBox39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Light Stomach ache" />
+
+            <CheckBox
+                android:id="@+id/checkBox40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="loss of appetite" />
+
+            <CheckBox
+                android:id="@+id/checkBox41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="severe Stomach ache" />
+
+            <CheckBox
+                android:id="@+id/checkBox42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="swollen tummy" />
+
+            <CheckBox
+                android:id="@+id/checkBox43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood in vomit" />
+
+            <CheckBox
+                android:id="@+id/checkBox44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Being sick repeatedly" />
+
+            <CheckBox
+                android:id="@+id/checkBox45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bleeding gums" />
+
+            <CheckBox
+                android:id="@+id/checkBox46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fast Breathing" />
+
+            <CheckBox
+                android:id="@+id/checkBox47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breathing difficulties" />
+
+            <CheckBox
+                android:id="@+id/checkBox48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cold skin" />
+
+            <CheckBox
+                android:id="@+id/checkBox49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="clammy skin" />
+
+            <CheckBox
+                android:id="@+id/checkBox50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loss of conciousness" />
+
+            <CheckBox
+                android:id="@+id/checkBox51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="drowsiness" />
+
+            <CheckBox
+                android:id="@+id/checkBox52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="weak pulse" />
+
+            <CheckBox
+                android:id="@+id/checkBox53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fast pulse" />
+
+            <CheckBox
+                android:id="@+id/checkBox54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sudden Fever (Temperature of 38C+)" />
+
+            <CheckBox
+                android:id="@+id/checkBox55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Body ache" />
+
+            <CheckBox
+                android:id="@+id/checkBox56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feeling exhausted" />
+
+            <CheckBox
+                android:id="@+id/checkBox57"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difficulty in sleeping" />
+
+            <CheckBox
+                android:id="@+id/checkBox58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diarrhoea" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

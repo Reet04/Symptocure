@@ -1,5 +1,4 @@
 package com.example.symptocure;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,13 +23,14 @@ public class Intro_window extends AppCompatActivity {
         Button button_next2=(Button) findViewById(R.id.button_next2);
         CheckBox checkBox=(CheckBox) findViewById(R.id.checkBox);
 
-
+        image_intro.setImageResource(R.drawable.doc2);
         heading_intro.setText("Terms and Conditions");
         text_greeting.setText("Note:");
         text_para.setText("• DO NOT USE IN EMERGENCY: This application is not meant for emergency cases. In case of any emergency, contact you local Doctor.\n" +
                 "• CHECKUP IS NOT A DIAGNOSIS: Checkup is just for self Information, and it is not Medically Qualified or verified.\n" +
                 "• NO PRESCRIPTION WILL BE GIVEN: The Prescription for the resulted disease will not be provided.\n" +
-                "• DATA WILL BE SAFE: The Personal Details of the user will remain confidential at any cost.");
+                "• DATA WILL BE SAFE: The Personal Details of the user will remain confidential at any cost.\n" +
+                "• THIS APPLICATION IS ONLY FOR PEOPLE ABOVE THE AGE OF 15.");
 
         button_back.setVisibility(view.VISIBLE);
         button_next.setVisibility(view.INVISIBLE);
@@ -56,6 +56,7 @@ public class Intro_window extends AppCompatActivity {
         text_para.setText("Symptocure is a safe and fast Self Check-up tool. Your symptoms would be carefully analyzed and according to your answers," +
                 " the Expected Problem, it's Precaution and the type of Doctor to be concerned will be displayed.");
 
+        image_intro.setImageResource(R.drawable.doc1);
         button_back.setVisibility(view.INVISIBLE);
         button_next.setVisibility(view.VISIBLE);
         button_next2.setVisibility(view.INVISIBLE);
@@ -70,7 +71,7 @@ public class Intro_window extends AppCompatActivity {
 
         if(checkBox.isChecked())
         {
-            Intent intent=new Intent(getApplicationContext(),Login_window.class);
+            Intent intent=new Intent(getApplicationContext(),Symptom_selection_window.class);
             startActivity(intent);
             finish();
         }
