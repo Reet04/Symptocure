@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgr"
+    android:layout_height="match_parent"
+    tools:context=".basic_info_window">
+
+    <TextView
+        android:id="@+id/heading_login"
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
+        android:background="#2979FF"
+        android:fontFamily="@font/montserratsemibold"
+        android:lineSpacingExtra="8sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        android:text="Basic Information"
+        android:textAlignment="center"
+        android:textColor="#052828"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ques_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Please select your Gender"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading_login" />
+
+    <Button
+        android:id="@+id/male_button"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/backgr"
+        android:fontFamily="@font/montserratbold"
+        android:text="MALE"
+        android:textColor="#94000000"
+        android:textSize="24sp"
+        android:onClick="gender_selected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ques_text" />
+
+    <Button
+        android:id="@+id/female_button"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/backgr"
+        android:fontFamily="@font/montserratbold"
+        android:text="FEMALE"
+        android:onClick="gender_selected"
+        android:textColor="#94000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/male_button" />
+
+    <Button
+        android:id="@+id/next_age_button"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/backgr"
+        android:fontFamily="@font/montserratbold"
+        android:text="NEXT"
+        android:visibility="invisible"
+        android:onClick="age_entered"
+        android:textColor="#94000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/male_button" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/age_input"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="#94000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/ques_text"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="379dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter here" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

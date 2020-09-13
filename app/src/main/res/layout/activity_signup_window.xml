@@ -50,19 +50,19 @@
         app:boxCornerRadiusTopEnd="0dp"
         app:boxCornerRadiusTopStart="0dp"
         app:boxStrokeColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/input_username"
+        app:layout_constraintBottom_toTopOf="@+id/input_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
 
     <EditText
-        android:id="@+id/input_username"
+        android:id="@+id/input_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="10dp"
-        android:hint="Username"
+        android:hint="Email id"
         app:boxCornerRadiusBottomEnd="0dp"
         app:boxCornerRadiusBottomStart="0dp"
         app:boxCornerRadiusTopEnd="0dp"
@@ -138,6 +138,7 @@
         android:letterSpacing=".1"
         android:padding="12dp"
         android:text="Already a member?"
+        android:onClick="take_to_login"
         android:background="#2979FF"
         android:textColor="#052828"
         android:textSize="14sp"

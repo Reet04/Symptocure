@@ -64,14 +64,14 @@ public class Intro_window extends AppCompatActivity {
         checkBox.setChecked(false);
     }
 
-    public void login_next(View view)    //When the "Back" button is clicked, the user will get back Introduction from Terms and Conditions.
+    public void login_next(View view)
     {
         Button button_next2=(Button) findViewById(R.id.button_next2);
         CheckBox checkBox=(CheckBox) findViewById(R.id.checkBox);
 
         if(checkBox.isChecked())
         {
-            Intent intent=new Intent(getApplicationContext(),Symptom_selection_window.class);
+            Intent intent=new Intent(getApplicationContext(),Signup_window.class);
             startActivity(intent);
             finish();
         }
