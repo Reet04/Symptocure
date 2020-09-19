@@ -10,6 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Signup_window extends AppCompatActivity {
 
 
+    public void anony_clicked(View view)
+    {
+        Intent intent=new Intent(getApplicationContext(),basic_info_window.class);
+        startActivity(intent);
+        finish();
+
+    }
+
     public void take_to_login(View view)
     {
         Intent intent=new Intent(getApplicationContext(),Login_window.class);

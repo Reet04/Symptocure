@@ -7,6 +7,18 @@
     android:background="@drawable/backgr"
     tools:context=".Signup_window">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading_login"
+        app:srcCompat="@drawable/med_img3" />
+
     <TextView
         android:id="@+id/heading_login"
         android:layout_width="413dp"
@@ -25,17 +37,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/image_login"
-        android:layout_width="338dp"
-        android:layout_height="228dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heading_login"
-        app:srcCompat="@drawable/doc3" />
+
+
 
     <EditText
         android:id="@+id/input_name"
@@ -120,10 +123,13 @@
         android:letterSpacing=".1"
         android:onClick="signup_pressed"
         android:padding="12dp"
+        android:background="#2979FF"
+        android:textColor="#052828"
+        app:strokeColor="@color/colorPrimaryDark"
         android:stateListAnimator="@null"
         android:text="sign up"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/alreadyMemberBtn"
+        app:layout_constraintBottom_toTopOf="@+id/anonymousbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -147,6 +153,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/colorPrimaryDark"
         app:strokeWidth="1.5dp" />
+    <Button
+        android:id="@+id/anonymousbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/montserratbold"
+        android:letterSpacing=".1"
+        android:onClick="anony_clicked"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:text="Continue Anonymously"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/alreadyMemberBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
