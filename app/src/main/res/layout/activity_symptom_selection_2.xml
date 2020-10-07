@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgr"
-    tools:context=".Symptom_selection_window">
+    tools:context=".Symptom_selection_2">
 
     <TextView
         android:id="@+id/heading_login"
@@ -69,7 +69,7 @@
                 android:layout_height="45dp"
                 android:background="@drawable/backgr"
                 android:tag="1"
-                android:text="blocked nose" />
+                android:text="" />
 
             <CheckBox
                 android:id="@+id/checkBox2"
@@ -77,7 +77,7 @@
                 android:layout_height="45dp"
                 android:background="@drawable/backgr"
                 android:tag="2"
-                android:text="runny nose" />
+                android:text="" />
 
             <CheckBox
                 android:id="@+id/checkBox3"
@@ -85,7 +85,7 @@
                 android:layout_height="45dp"
                 android:background="@drawable/backgr"
                 android:tag="3"
-                android:text="sore throat" />
+                android:text="" />
 
             <CheckBox
                 android:id="@+id/checkBox4"
@@ -93,7 +93,7 @@
                 android:layout_height="45dp"
                 android:tag="4"
                 android:background="@drawable/backgr"
-                android:text="Headache" />
+                android:text="" />
 
             <CheckBox
                 android:id="@+id/checkBox5"
@@ -101,7 +101,7 @@
                 android:layout_height="45dp"
                 android:background="@drawable/backgr"
                 android:tag="5"
-                android:text="Dry cough" />
+                android:text="" />
 
             <CheckBox
                 android:id="@+id/checkBox6"
@@ -109,7 +109,7 @@
                 android:layout_height="45dp"
                 android:background="@drawable/backgr"
                 android:tag="6"
-                android:text="Wet cough" />
+                android:text="" />
 
             <CheckBox
                 android:id="@+id/checkBox7"
@@ -117,14 +117,14 @@
                 android:layout_height="45dp"
                 android:background="@drawable/backgr"
                 android:tag="7"
-                android:text="Chronic cough" />
+                android:text="" />
 
             <CheckBox
                 android:id="@+id/checkBox8"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:background="@drawable/backgr"
-                android:text="Sneezing" />
+                android:text="" />
 
             <CheckBox
                 android:id="@+id/checkBox9"
