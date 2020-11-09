@@ -1,5 +1,6 @@
 package com.example.symptocure;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -258,6 +259,19 @@ public class Symptom_selection_window extends AppCompatActivity {
                 Log.i("ddd", "is " + disease_results[i] + "    " + result_count[i]);
             }
             Log.i("Step 2.3", "en    f="+f);
+
+
+
+
+            Bundle b=new Bundle();
+            b.putStringArray("Result array", disease_results);
+            b.putIntArray("Result count",result_count);
+
+            Intent intent=new Intent(getApplicationContext(),Result_window.class);
+            intent.putExtras(b);
+            intent.putExtra("Index", f);
+            startActivity(intent);
+            finish();
         }
     }
 
@@ -267,10 +281,7 @@ public class Symptom_selection_window extends AppCompatActivity {
 
 
         /*
-        Intent intent=new Intent(getApplicationContext(),Symptom_selection_2.class);
-        intent.putExtra("Index_array", inde);
-        startActivity(intent);
-        finish();
+
 */
 
 

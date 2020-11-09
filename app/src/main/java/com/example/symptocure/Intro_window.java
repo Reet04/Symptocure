@@ -90,9 +90,6 @@ public class Intro_window extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro_window);
 
-        Intent intent=new Intent(getApplicationContext(),Symptom_selection_window.class);
-        startActivity(intent);
-        finish();
         Button button_next2=(Button) findViewById(R.id.button_next2);
         CheckBox checkBox=(CheckBox) findViewById(R.id.checkBox);
 
