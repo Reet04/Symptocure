@@ -23,18 +23,18 @@ public class Symptom_selection_window extends AppCompatActivity {
 
         String diseases[][]={{"Commom cold","Bronchitis","Flu"},
                 {"asthma","bronchitis","pneumonia","pneumothorax","anemia","lung cancer","inhalation injury","pulmonary embolism","anxiety","COPD","arrhythmia","allergic reaction","anaphylaxis","subglottic stenosis","interstitial lung disease"},
-                {"Common cold","Flu (influenza)","Mono (mononucleosis)","Measles","Chickenpox","COVID-19","Croup","Allergies","Dryness","Gastroesophageal reflux(GERD)","Irritants","Muscle strain","HIV infection,tumors"},
+                {"Common cold","Flu","Mono (mononucleosis)","Measles","Chickenpox","COVID-19","Croup","Allergies","Dryness","Gastroesophageal reflux","Irritants","Muscle strain","HIV infection,tumors"},
                 {"Rheumatoid","arthritis","osteoarthritis"},
-                {"Chickenpox","Flu (influenza)","Herpes","Human immunodeficiency virus (HIV/AIDS)","Human papillomavirus (HPV)","Infectious mononucleosis","Mumps","measles and rubella","Shingles","Viral gastroenteritis (stomach flu)","Viral hepatitis","Viral meningitis","Viral pneumonia"},
+                {"Chickenpox","Flu","Herpes","Human immunodeficiency virus","Human papillomavirus","Infectious mononucleosis","Mumps","measles and rubella","Shingles","Viral gastroenteritis (stomach flu)","Viral hepatitis","Viral meningitis","Viral pneumonia"},
                 {"irregular heart beats","seizures","low blood sugar","anemia","low blood pressure"},
-                {"Obesity","Diabetes","High blood pressure","Poor nutrition","Parkinson disease","Alzheimer disease","Multiple sclerosis","Illness such as cold or flu, sinus infection, and allergies","Head injury","Hormone changes","Dental or mouth problems","Nasal polyps","Exposure to certain chemicals","Certain medicines","Exposure to radiation therapy","Cocaine snorted through the nose","Cigarette smoking"},
+                {"Obesity","Diabetes","High blood pressure","Poor nutrition","Parkinson disease","Alzheimer disease","Multiple sclerosis","Common Cold","Flu","Head injury","Hormone changes","Dental or mouth problems","Nasal polyps","Exposure to certain chemicals","Certain medicines","Exposure to radiation therapy","Cocaine snorted through the nose","Cigarette smoking"},
                 {"rubella","chickenpox","mononucleosis","roseola","hand, foot, and mouth disease","fifth disease","Zika virus","West Nile virus","dengue fever"},
-                {"Common cold","Influenza (flu)","Other respiratory tract infections","Sinusitis"},
-                {"lung infection","lung cancer","acute sinusitis","chronic sinusitis","bronchiolitis","cystic fibrosis","emphysema","laryngitis","pertussis (whooping cough)","COPD","heart failure","croup","tuberculosis","idiopathic pulmonary fibrosis (IPF)"},
+                {"Common cold","flu","Other respiratory tract infections","Sinusitis"},
+                {"asthma","lung infection","lung cancer","acute sinusitis","chronic sinusitis","bronchitis","cystic fibrosis","emphysema","laryngitis","pertussis (whooping cough)","COPD","heart failure","croup","tuberculosis","idiopathic pulmonary fibrosis (IPF)"},
                 {"Chronic gut disorders","irritable bowel syndrome (IBS)","Crohns disease","Dengue"},
                 {"the flu","thyroid disease","anemia","depression or anxiety","a lack of sleep","poorly managed or undiagnosed diabetes","congestive heart failure","vitamin B-12 deficiency"},
                 {"Adult Still's disease","Ankylosing spondylitis","Avascular necrosis","Bone cancer","Broken bone","Bursitis (joint inflammation)","Complex regional pain syndrome","Disloca","Leukemia","Lupus","Lyme disease","Osteoarthritis","Osteomyelitis (a bone infection)","Pagets disease of bone","Polymyalgia rheumatica","Pseudogout","Psoriatic arthritis","Reactive arthritis","Rheumatic fever","Rheumatoid arthritis","Rickets","Sarcoidosis","Septic arthritis","Sprains","Tendinitis"},
-                {"Anterior prolapse (cystocele)","Anxiety disorders","Benign prostatic hyperplasia (BPH)","Bladder stones","Change in kidney function","Diabetes insipidus","Diuretics (water retention relievers)","Excess consumption of total fluids, alcohol or caffeine"},
+                {"Anterior prolapse (cystocele)","Anxiety disorders","Benign prostatic hyperplasia (BPH)","Bladder stones","Change in kidney function","Diabetes insipidus","Diuretics","Excess consumption of total fluids, alcohol or caffeine"},
                 {"Urinary tract or kidney infections","Bladder or kidney stones","inflammation in the filtering system (glomerulonephritis)","An enlarged prostate (benign prostatic hyperplasia) or prostate cancer","Inherited diseases such as sickle cell anemia and cystic kidney disease","Certain medications such as aspirin, cyclophosphamide, heparin, and penicillin","Cancer in your bladder or kidney","A kidney injury from an accident or sports","Vigorous exercise"}};
 
 
@@ -42,8 +42,8 @@ public class Symptom_selection_window extends AppCompatActivity {
 
         String symptom_2d[][]={
                 {"blocked or runny nose","sore throat","headache","muscle aches","coughs","sneezing","raised temperature","pressure in your ears and face","loss of taste and smell"},
-                {"sore throat","headache","runny or blocked nose","aches and pains","tiredness"},
-                {"wheezing (a whistling sound when breathing)","breathlessness","a tight chest","coughing"},
+                {"sore throat","headache","breathlessness","dry cough","runny or blocked nose","aches and pains","tiredness"},
+                {"wheezing","breathlessness","chest pain","dry cough"},
                 {"light headedness or dizziness","feeling sick","blurred vision","generally feeling weak","confusion","fainting"},
                 {"tiredness","swollen ankles, feet or hands (due to water retention)","shortness of breath","blood in urine","urinating more often","itchy skin"},
                 {"high temperature","feeling hot or shivery","headache","pain behind the eyes","muscle and joint pain","feeling or being sick","widespread red rash","tummy pain and loss of appetite","severe tummy pain","swollen tummy","being sick repeatedly and vomiting blood","bleeding gums or bleeding under the skin","breathing difficulties or fast breathing","cold","clammy skin","weak but fast pulse","drowsiness or loss of consciousness"},
@@ -177,21 +177,22 @@ public class Symptom_selection_window extends AppCompatActivity {
 
         String Symp[] = {"Headache", "Breathlessness", "Sore throat", "Sleeplessness", "Viral", "Fainting", "loss of taste and smell", "Red Rash", "Sneezing", "Dry cough", "Swollen tummy", "Feeling weak", "Muscle and joint pain", "Urinate more often", "Urine in blood"};
 
-        String diseases[][] = {{"Common cold", "Bronchitis", "Flu", "COVID-19"},
-                {"asthma", "bronchitis", "pneumonia", "pneumothorax", "anemia", "lung cancer", "inhalation injury", "pulmonary embolism", "anxiety", "COPD", "arrhythmia", "allergic reaction", "anaphylaxis", "subglottic stenosis", "interstitial lung disease"},
-                {"Common cold", "Flu (influenza)", "Mono (mononucleosis)", "Measles", "Chickenpox", "COVID-19", "Croup", "Allergies", "Dryness", "Gastroesophageal reflux(GERD)", "Irritants", "Muscle strain", "HIV infection,tumors"},
-                {"Rheumatoid", "arthritis", "osteoarthritis"},
-                {"Chickenpox", "Flu (influenza)", "Herpes", "Human immunodeficiency virus (HIV/AIDS)", "Human papillomavirus (HPV)", "Infectious mononucleosis", "Mumps", "measles and rubella", "Shingles", "Viral gastroenteritis (stomach flu)", "Viral hepatitis", "Viral meningitis", "Viral pneumonia"},
-                {"irregular heart beats", "seizures", "low blood sugar", "anemia", "low blood pressure"},
-                {"Obesity", "Diabetes", "High blood pressure", "Poor nutrition", "Parkinson disease", "Alzheimer disease", "Multiple sclerosis", "Illness such as cold or flu, sinus infection, and allergies", "Head injury", "Hormone changes", "Dental or mouth problems", "Nasal polyps", "Exposure to certain chemicals", "Certain medicines", "Exposure to radiation therapy", "Cocaine snorted through the nose", "Cigarette smoking"},
-                {"rubella", "chickenpox", "mononucleosis", "roseola", "hand, foot, and mouth disease", "fifth disease", "Zika virus", "West Nile virus", "dengue fever"},
-                {"Common cold", "Influenza (flu)", "Other respiratory tract infections", "Sinusitis"},
-                {"lung infection","COVID-19", "lung cancer", "acute sinusitis", "chronic sinusitis", "bronchiolitis", "cystic fibrosis", "emphysema", "laryngitis", "pertussis (whooping cough)", "COPD", "heart failure", "croup", "tuberculosis", "idiopathic pulmonary fibrosis (IPF)"},
-                {"Chronic gut disorders", "irritable bowel syndrome (IBS)", "Crohns disease", "Dengue"},
-                {"the flu", "thyroid disease", "anemia", "depression or anxiety", "a lack of sleep", "poorly managed or undiagnosed diabetes", "congestive heart failure", "vitamin B-12 deficiency"},
-                {"Adult Still's disease", "Ankylosing spondylitis", "Avascular necrosis", "Bone cancer", "Broken bone", "Bursitis (joint inflammation)", "Complex regional pain syndrome", "Disloca", "Leukemia", "Lupus", "Lyme disease", "Osteoarthritis", "Osteomyelitis (a bone infection)", "Pagets disease of bone", "Polymyalgia rheumatica", "Pseudogout", "Psoriatic arthritis", "Reactive arthritis", "Rheumatic fever", "Rheumatoid arthritis", "Rickets", "Sarcoidosis", "Septic arthritis", "Sprains", "Tendinitis"},
-                {"Anterior prolapse (cystocele)", "Anxiety disorders", "Benign prostatic hyperplasia (BPH)", "Bladder stones", "Change in kidney function", "Diabetes insipidus", "Diuretics (water retention relievers)", "Excess consumption of total fluids, alcohol or caffeine"},
-                {"Urinary tract or kidney infections", "Bladder or kidney stones", "inflammation in the filtering system (glomerulonephritis)", "An enlarged prostate (benign prostatic hyperplasia) or prostate cancer", "Inherited diseases such as sickle cell anemia and cystic kidney disease", "Certain medications such as aspirin, cyclophosphamide, heparin, and penicillin", "Cancer in your bladder or kidney", "A kidney injury from an accident or sports", "Vigorous exercise"}};
+        String diseases[][]={{"Commom cold","Bronchitis","Flu"},
+                {"asthma","bronchitis","pneumonia","pneumothorax","anemia","lung cancer","inhalation injury","pulmonary embolism","anxiety","COPD","arrhythmia","allergic reaction","anaphylaxis","subglottic stenosis","interstitial lung disease"},
+                {"Common cold","Flu","Mono (mononucleosis)","Measles","Chickenpox","COVID-19","Croup","Allergies","Dryness","Gastroesophageal reflux","Irritants","Muscle strain","HIV infection,tumors"},
+                {"Rheumatoid","arthritis","osteoarthritis"},
+                {"Chickenpox","Flu","Herpes","Human immunodeficiency virus","Human papillomavirus","Infectious mononucleosis","Mumps","measles and rubella","Shingles","Viral gastroenteritis (stomach flu)","Viral hepatitis","Viral meningitis","Viral pneumonia"},
+                {"irregular heart beats","seizures","low blood sugar","anemia","low blood pressure"},
+                {"Obesity","Diabetes","High blood pressure","Poor nutrition","Parkinson disease","Alzheimer disease","Multiple sclerosis","Common Cold","Flu","Head injury","Hormone changes","Dental or mouth problems","Nasal polyps","Exposure to certain chemicals","Certain medicines","Exposure to radiation therapy","Cocaine snorted through the nose","Cigarette smoking"},
+                {"rubella","chickenpox","mononucleosis","roseola","hand, foot, and mouth disease","fifth disease","Zika virus","West Nile virus","dengue fever"},
+                {"Common cold","flu","Other respiratory tract infections","Sinusitis"},
+                {"asthma","lung infection","lung cancer","acute sinusitis","chronic sinusitis","bronchitis","cystic fibrosis","emphysema","laryngitis","pertussis (whooping cough)","COPD","heart failure","croup","tuberculosis","idiopathic pulmonary fibrosis (IPF)"},
+                {"Chronic gut disorders","irritable bowel syndrome (IBS)","Crohns disease","Dengue"},
+                {"the flu","thyroid disease","anemia","depression or anxiety","a lack of sleep","poorly managed or undiagnosed diabetes","congestive heart failure","vitamin B-12 deficiency"},
+                {"Adult Still's disease","Ankylosing spondylitis","Avascular necrosis","Bone cancer","Broken bone","Bursitis (joint inflammation)","Complex regional pain syndrome","Disloca","Leukemia","Lupus","Lyme disease","Osteoarthritis","Osteomyelitis (a bone infection)","Pagets disease of bone","Polymyalgia rheumatica","Pseudogout","Psoriatic arthritis","Reactive arthritis","Rheumatic fever","Rheumatoid arthritis","Rickets","Sarcoidosis","Septic arthritis","Sprains","Tendinitis"},
+                {"Anterior prolapse (cystocele)","Anxiety disorders","Benign prostatic hyperplasia (BPH)","Bladder stones","Change in kidney function","Diabetes insipidus","Diuretics","Excess consumption of total fluids, alcohol or caffeine"},
+                {"Urinary tract or kidney infections","Bladder or kidney stones","inflammation in the filtering system (glomerulonephritis)","An enlarged prostate (benign prostatic hyperplasia) or prostate cancer","Inherited diseases such as sickle cell anemia and cystic kidney disease","Certain medications such as aspirin, cyclophosphamide, heparin, and penicillin","Cancer in your bladder or kidney","A kidney injury from an accident or sports","Vigorous exercise"}};
+
 
         CheckBox[] che = new CheckBox[100];
         String disease_results[] = new String[100];
